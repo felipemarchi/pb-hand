@@ -8,3 +8,7 @@ Sistema para registrar acertos e erros, gols prós e contras durante um partida 
 - Acesse https://felipemarchi.github.io/pb-hand/
 - Ou faça download do projeto e execute o `index.html`
 
+## Oportunidades de melhorias
+- Melhor responsividade
+- Transparência dos registros (ex. possibilidade de revisão e exclusão)
+- Clareza da funcionalidade de exportação
