@@ -12,3 +12,4 @@ Sistema para registrar acertos e erros, gols prós e contras durante um partida 
 - Melhor responsividade
 - Transparência dos registros (ex. possibilidade de revisão e exclusão)
 - Clareza da funcionalidade de exportação
+- Definição dos jogadores em quadra/banco no início da partida
