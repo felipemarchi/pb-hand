@@ -5,7 +5,6 @@ const emQuadra = [12];
 
 // função load
 document.addEventListener('DOMContentLoaded', async () => {
-    lockScreenOrientation();    
     if (existePartida() && await desejaContinuarJogando())
         tabelaExportacao.innerHTML = localStorage.getItem("tabelaExportacao");
     else
@@ -68,15 +67,6 @@ function resetarStorage() {
 }
 function existePartida() {
     return localStorage.getItem("partida") && localStorage.getItem("partida") != null;
-}
-function lockScreenOrientation() {
-  if (screen.orientation && screen.orientation.lock) {
-    screen.orientation.lock('landscape').catch(function(error) {
-      console.log('Não foi possível travar a orientação da tela:', error);
-    });
-  } else if (screen.lockOrientation) {
-    screen.lockOrientation('landscape');
-  }
 }
 
 // funções do jogo
