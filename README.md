@@ -9,7 +9,7 @@ Sistema para registrar acertos e erros, gols prós e contras durante um partida 
 - Ou faça download do projeto e execute o `index.html`
 
 ## Oportunidades de melhorias
-- Melhor responsividade
+- Melhorar responsividade (travar orientação do dispositivo como Paisagem, se for o caso)
 - Transparência dos registros (ex. possibilidade de revisão e exclusão)
 - Clareza da funcionalidade de exportação
 - Definição dos jogadores em quadra/banco no início da partida
