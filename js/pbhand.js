@@ -4,13 +4,15 @@ var registrandoAcerto = false;
 const emQuadra = [12];
 
 // função load
-document.addEventListener('DOMContentLoaded', async () => {
+/*document.addEventListener('DOMContentLoaded', async () => {
     if (existePartida() && await desejaContinuarJogando())
         tabelaExportacao.innerHTML = localStorage.getItem("tabelaExportacao");
     else
         iniciarNovoJogo();
     preencherBanco();
-});
+});*/
+iniciarNovoJogo();
+preencherBanco();
 
 // funções de configuração
 function iniciarNovoJogo() {
@@ -19,7 +21,7 @@ function iniciarNovoJogo() {
     solicitarPartida(); 
 }
 function solicitarPartida() {
-    swal({
+    /*swal({
         text: "Digite o nome do adversário da partida:",
         content: "input",
         button: true,
@@ -29,7 +31,10 @@ function solicitarPartida() {
     .then((adversario) => {
         localStorage.setItem("partida", adversario);
         return adversario == '' ? solicitarPartida() : adversario;
-    })
+    })*/
+	var data = new Date();
+	localStorage.setItem("partida", data);
+	return data;
 }
 async function desejaContinuarJogando() {
     return swal({
