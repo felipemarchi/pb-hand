@@ -16,7 +16,7 @@ preencherBanco();
 
 // funções de configuração
 function iniciarNovoJogo() {
-    exportarTabela();
+    //exportarTabela();
     resetarStorage();
     solicitarPartida(); 
 }
