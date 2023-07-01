@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Estatísticas PBHand</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>            
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+         <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+
+        <main>
+            <div class="background">
+                <section class="gol">
+                    <a href="javascript:escolherPosicao(1)"><img class="cima-esquerda" src="img/favicon.png" /></a>
+                    <a href="javascript:escolherPosicao(2)"><img class="cima-direita" src="img/favicon.png" /></a>
+                    <a href="javascript:escolherPosicao(3)"><img class="baixo-esquerda" src="img/favicon.png" /></a>
+                    <a href="javascript:escolherPosicao(4)"><img class="baixo-direita" src="img/favicon.png" /></a>
+                    <a href="javascript:escolherPosicao(5)"><img class="centro" src="img/favicon.png" /></a>
+                
+                    <a href="javascript:escolherAcerto(true)"><img class="acerto" src="img/acerto.png" /></a>
+                    <a href="javascript:escolherAcerto(false)"><img class="erro" src="img/erro.png" /></a>
+                </section>
+
+                <section class="area">
+                    <a id="jogador12" href="javascript:escolherGoleiro(12)"><span class="goleiro centro">12</span></a>
+                </section>
+
+                <section class="quadra">
+                    <a id="jogador7" href="javascript:escolherJogador(7)"><span class="jogador ponta-esquerda">7</span></a>
+                    <a id="jogador3" href="javascript:escolherJogador(3)"><span class="jogador lateral-esquerdo">3</span></a>
+                    <a id="jogador4" href="javascript:escolherJogador(4)"><span class="jogador central">4</span></a>
+                    <a id="jogador6" href="javascript:escolherJogador(6)"><span class="jogador lateral-direito">6</span></a>
+                    <a id="jogador5" href="javascript:escolherJogador(5)"><span class="jogador ponta-direita">5</span></a>
+                    <a id="jogador2" href="javascript:escolherJogador(2)"><span class="jogador pivo">2</span></a>
+                </section>
+            </div>
+        </main>  
+
+        <nav class="navbar">            
+            <label class="text-small">Mensagem do sistema:</label><br/>
+            <label id="lblMensagem" class="text-small"></label><br/>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ckb7metros">
+                <label class="form-check-label" for="ckb7metros">7 metros</label>
+            </div>
+
+            <label>JOGADOR</label>
+            <input id="txtJogador" type="text" disabled/>
+
+            <label>GOL/DEFESA:</label>
+            <input id="txtAcerto" type="text" disabled/>
+
+            <label>POSIÇÃO:</label>
+            <input id="txtPosicao" type="text" disabled/>
+
+            <div id="navbarScroll">
+                <label>ÁREA DE SUBSTITUIÇÃO:</label>
+                <ul id="bancoReserva" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 350px; width: 235px; text-align: center;margin-top: 10px!important;">
+                    <li class="nav-item"><a id="banco1" class="nav-link" href="javascript:substituirJogador(1)"><span class="jogador">1</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <table id="tblToExcel" class="table table-bordered d-none" style="display: contents;">
+            <thead>
+                <tr>
+                    <th>Jogador</th>
+                    <th>Acerto</th>
+                    <th>Posição</th>
+                    <th>Goleiro</th>
+                    <th>7metros</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaExportacao"></tbody>
+        </table>
+            
+        
+        <script type="text/javascript" src="js/tableToExcel.js"></script>
+        <script src="js/pbhand.js"></script>        
+    </body>
+</html>

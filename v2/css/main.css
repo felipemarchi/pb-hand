@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+
+/* GERAL */
+.text-small {
+    font-size: 15px;
+    font-weight: 100;
+}
+.sucesso {
+    color: greenyellow;
+}
+.atencao {
+    color: #ffd515;
+}
+.validado {
+    background-color: #c2ff65;
+}
+
+/* TELA */
+body {
+    font-family: 'K2D', sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #444;
+}
+main {
+    width: 50%;
+    background: #535353;
+}
+.background {
+    background-image: url("../img/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100%;
+}
+nav {
+    width: 40%;
+    background-color: #444;
+    padding: 1rem 2rem!important;
+    display: inline!important;
+}
+
+/* GOL */
+.gol {
+    top: 5%;
+    height: 20%;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #0fca0fcc; */
+    position: relative;
+}
+    .gol img {
+        height: 30px;
+        position: absolute;
+    }
+        .gol img.cima-esquerda {
+            top: 0;
+            left: 30%;
+        }
+        .gol img.cima-direita {
+            top: 0;
+            right: 30%;
+        }
+        .gol img.baixo-esquerda {
+            bottom: 0;
+            left: 30%;
+        }
+        .gol img.baixo-direita {
+            bottom: 0;
+            right: 30%;
+        }
+        .gol img.centro {
+            top: 40%;
+            left: 47%;
+        }
+        .gol img.acerto {
+            height: 90px;
+            top: 10%;
+            left: 0;
+        }
+        .gol img.erro {
+            height: 90px;
+            top: 10%;
+            right: 0;
+        }
+
+/* ÁREA */
+.area {
+    top: 5%;
+    height: 25%;
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: #3fd2cfcc; */
+    position: relative;
+}
+    .area span, .quadra span  {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 15px;
+        position: absolute;
+        border-radius: 2px;
+    }
+        .area span.goleiro {
+            color: #000;
+            background-color: #fbbc04;
+            border: solid #000 3px;
+        }
+        .area span.centro {
+            top: 30%;
+            left: 45%;
+        }
+
+/* QUADRA */
+.quadra {
+    top: 5%;
+    height: 35%;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #dc64e0cc; */
+    position: relative;
+}
+    .quadra span.jogador {
+        color: #fbbc04;
+        background-color: #073763;
+        border: solid #fbbc04 3px;
+    }
+    .quadra span.ponta-esquerda {
+        top: 0;
+        left: 0;
+    }
+    .quadra span.lateral-esquerdo {
+        top: 35%;
+        left: 20%;
+    }
+    .quadra span.central {
+        top: 60%;
+        left: 46%;
+    }
+    .quadra span.lateral-direito {
+        top: 35%;
+        right: 20%;
+    }
+    .quadra span.ponta-direita {
+        top: 0;
+        right: 0;
+    }
+    .quadra span.pivo {
+        top: 10%;
+        left: 46%;
+    }
+
+/* FORM */
+label {    
+    font-size: 20px;
+    color: #fff;
+}
+input {
+    display: list-item;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: #000;
+}
+.nav-item  {
+    background-color: #073763;
+    border: 1px solid #fbbc04;
+}
+    .nav-item span  {
+        color: #fbbc04;
+    }
+    .nav-item .substituido {
+        background: steelblue;
+    }
+.form-check {
+    padding-left: 2em;
+    margin: 1rem 0;
+    list-style: none;
+}
